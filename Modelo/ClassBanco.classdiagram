@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ab8ac737-932c-4ead-b364-58507fa3bd22" name="ClassBanco" linkedPackageId="49078907-446e-4e23-af60-143603102dc6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="6aad1612-27f9-46dc-bbcd-37fcb3cb4936">
+      <profileInstance Id="b60996bb-9013-482c-b3b9-5425d29e62b6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="36140ea5-57e2-4695-b1a4-6d9958e6b468">
+      <profileInstance Id="dfaee9b9-4e56-4370-a854-57073e2234cb" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e79b9dfd-509a-457c-aa83-35acff0b468a" name="Cliente" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a7b1b188-d5b2-4e32-b0b0-746b164532fe" />
+        <targetEnds>
+          <association Id="4b45fc4e-05c3-4ce2-886a-c53c8b596409" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="ejecuta" isAbstract="false">
+            <classMoniker Id="cfe8ab26-1db3-4a74-b6fc-1acc90b8448f" LastKnownName="Operacion" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f7f25019-02e7-4c19-8e0d-35cae9949cc6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7c89e6f0-9f8a-47de-bbf0-fd562be25ddf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6f06c489-87c1-4788-84b3-5116fa59c17d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="e62933aa-e943-4ea2-8fe1-62ee7976bf18" name="Lower" value="0">
+                      <elementDefinition Id="b590de34-cfe2-47bc-bd8d-c4c005bbce2a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="2b6d163e-ae3e-48a4-8797-e24a4157481b" name="Upper" value="*">
+                      <elementDefinition Id="2be5bb95-66e6-48fd-96a3-cbd3ff3b8962" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c468acba-cada-462f-9198-aca137dd60d9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7bbfcd95-7912-42bd-a90a-36658e531ce7" />
+          </association>
+          <association Id="9764822f-b160-477e-874f-6d3ed99607ea" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="tiene" isAbstract="false">
+            <classMoniker Id="9f3bbe41-a26f-4a9e-ba8c-54b977d8534a" LastKnownName="Cuenta" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cfce5a21-771c-4d28-91fe-5a8446362cd1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a3c245db-1c6a-4d47-8128-78218fb57a24" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac129ca1-f077-43cf-8fe2-f57b533caea3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="4856302f-eae0-4ab9-b00c-150dcae612ed" name="Lower" value="1">
+                      <elementDefinition Id="7e82225d-1ce8-41cb-8804-858307199753" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="8d5d2b69-8804-4e32-8daa-b7ffd4f20b73" name="Upper" value="*">
+                      <elementDefinition Id="888490a2-a948-43af-9e44-68aecf16844c" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="8d885ae9-f4b2-4637-b490-9b1b2227cadd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e8dadbab-2a36-4eaa-8e69-28acad137d4e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a076f85f-1833-49ea-aa12-18523f810383" name="Dni" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ab453a53-1b83-48db-96e9-a85bc461f4fb" />
+          </property>
+          <property Id="94420751-d68f-442f-9fa9-7e7ede48d6ca" name="Nombre" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8ac419a7-1989-4e63-b8d7-ef80043412da" />
+          </property>
+          <property Id="697ba22b-e120-4fd0-b66c-6ccd70333b7a" name="Direccion" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b19aab11-7c83-45fb-acd2-8ca85b380dfe" />
+          </property>
+          <property Id="f1c936a9-ce16-48a9-bad1-447f4ee687f8" name="Nacionalidad" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="faa5480c-aafe-4eef-9dfe-33c156003912" />
+          </property>
+          <property Id="370ea6f4-3f98-4c2f-9cf8-3ec292627cf1" name="FechaNacimiento" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="733cc5db-704b-43cb-b61b-fc46f2000325" />
+          </property>
+          <property Id="a0c9e0ed-baa8-43d1-bac0-69ed179a1706" name="Apellido" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5e7f0f6a-570a-4c04-bdb4-29d7a4b34c47" />
+          </property>
+          <property Id="aa7bba09-9407-4511-bfb5-c58a68bfa044" name="Telefono" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9e0ae978-c2bf-48f4-a0d1-d60cd02304d9" />
+          </property>
+          <property Id="971516e0-6ec9-4269-bddc-7c33f8c17de4" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="96e15a3f-ff54-492e-b9e9-e1c759794835" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="490534c0-7e06-436f-8d30-f72a91833702" name="CrearCuenta" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="77b2b673-3e14-4e20-8286-d9a066e3c896" />
+          </operation>
+          <operation Id="7e8c4996-ab5d-4126-97c9-7bc894a37e27" name="CerrarCuenta" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="55f0cfc1-5ee5-487d-b05b-75145120f018" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9f3bbe41-a26f-4a9e-ba8c-54b977d8534a" name="Cuenta" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="42c5688f-2535-4a1a-ab63-1ae61d8646a1" />
+        <ownedAttributesInternal>
+          <property Id="58206b67-160d-4e66-8742-d8d8ec34b67b" name="NumCuenta" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1b96e322-6f2b-4982-8c0b-5d79c471bb21" />
+          </property>
+          <property Id="0ac517ad-f3ea-4504-913c-288a592f33d1" name="Estado" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ff6f95c2-a4c5-4a8c-8809-d34d639e4265" />
+          </property>
+          <property Id="97773762-6c39-4be6-ab94-6164144fe99a" name="Saldo" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cfdc19e2-d5c8-4dd4-83dc-606319fb4f29" />
+          </property>
+          <property Id="f265cea9-d47d-44d4-9898-f9171acfd7d4" name="Moneda" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="addcfdcd-5f26-433c-8c25-fd0d32b3ab32" />
+          </property>
+          <property Id="6b9cae31-022f-49fa-9426-e1106b83408e" name="FechaApertura" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a57b6441-4a0f-418f-8a88-79f898baeb55" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5c700c9c-563c-4eee-815f-61964bd6144e" name="ConsultarSaldo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2ba0ea6d-a73e-4d8e-a9e8-5214ec770462" />
+          </operation>
+          <operation Id="a48daf6d-9096-4d9f-bd68-3438e04dd4b2" name="SumarSaldo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="25daf878-fd88-47da-acd1-477332314a8b" />
+          </operation>
+          <operation Id="ac0653ec-8970-49d5-af19-0823e7afc487" name="RestarSaldo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="69b9e8af-cc87-4923-a2d8-73b8249bbde9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cfe8ab26-1db3-4a74-b6fc-1acc90b8448f" name="Operacion" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0bd7a06a-c6b6-45b8-9bd6-5060e05b29c3" />
+        <ownedAttributesInternal>
+          <property Id="c326407f-61b8-468b-9499-7e130cb5e407" name="NumOperacion" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="67c4cdd6-8781-477e-a127-1b59c33dfb18" />
+          </property>
+          <property Id="6b204d87-b397-4437-9eaf-96c148aab251" name="FechaOperacion" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1ce4e7a4-ca58-44e6-90c8-f7325a70a54e" />
+          </property>
+          <property Id="542d8b0e-700d-488f-86c6-6c332de2e4c8" name="Monto" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="92cde078-babf-4f84-a8e5-2d698b25d041" />
+          </property>
+          <property Id="95c49e59-df02-4ef5-8ea6-729cdaa4a3c2" name="Moneda" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4690c5c7-f571-4f50-af5d-5d9c53a01424" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="f9736d2f-d451-4009-ad89-5b25710e45d8" name="ConsultarOperacion" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b81a106b-a9ff-4853-8f6d-7e862846ea4d" />
+          </operation>
+          <operation Id="5d6875a4-1dea-485a-a034-a8e98c2dd853" name="Ejecutar" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="03c1d1d5-71a5-468b-9aac-acc9d7a2b203" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dbe35ca1-32c2-4056-86fa-7b3954e9e9bc" name="Deposito" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4ef223e4-4094-42aa-8621-ff7de2a291ea" />
+        <generalsInternal>
+          <generalization Id="ea72edc8-f5fb-413c-812e-d4b6f65c70aa" isSubstitutable="false">
+            <classMoniker Id="cfe8ab26-1db3-4a74-b6fc-1acc90b8448f" LastKnownName="Operacion" />
+            <elementDefinition Id="d6820607-c676-48d2-bac5-a040c8e70daa" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="450b27cd-07e1-487c-b179-ca5d0f9b6911" name="Cuenta_Ahorro" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="692873d9-740e-4e0d-a17a-17eaa99efd86" />
+        <generalsInternal>
+          <generalization Id="c4214916-ba8d-45e1-8eda-7bab41c061de" isSubstitutable="false">
+            <classMoniker Id="9f3bbe41-a26f-4a9e-ba8c-54b977d8534a" LastKnownName="Cuenta" />
+            <elementDefinition Id="6243d72a-13c1-4d0a-90ee-4b75c45fa05a" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8ee99942-160d-481f-b47b-40b550867eac" name="Cuenta_Corriente" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="774db9ad-dcf2-49c2-a1c8-1a0e2eb94b73" />
+        <generalsInternal>
+          <generalization Id="5758539c-33c5-483f-a113-aaa91d26f3c2" isSubstitutable="false">
+            <classMoniker Id="9f3bbe41-a26f-4a9e-ba8c-54b977d8534a" LastKnownName="Cuenta" />
+            <elementDefinition Id="f71d07d0-cc4c-4b5d-a9fa-d2b85a7d50a2" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e9fd0212-32be-4b89-a1ec-b5521cad6a7b" name="Retiro" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="145d56c5-75ae-44ea-8fd6-991edc4c137e" />
+        <generalsInternal>
+          <generalization Id="db22eda5-78cb-470d-acaa-8a27840cc61b" isSubstitutable="false">
+            <classMoniker Id="cfe8ab26-1db3-4a74-b6fc-1acc90b8448f" LastKnownName="Operacion" />
+            <elementDefinition Id="b27f4039-922b-4ca1-b6a0-8b09360cb149" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="49078907-446e-4e23-af60-143603102dc6" name="Modelo">
+    <elementDefinition Id="e635dd0d-3676-40c9-8534-324a8d807b24" />
+  </package>
+</logicalClassDesignerModel>
